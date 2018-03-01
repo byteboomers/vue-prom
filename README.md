@@ -128,6 +128,10 @@ Data exposed by scoped slots:
 * Scoped 'rejected' slot exposes the 'error' object.
 * Scoped 'then' slot exposes the 'result' object.
 
+## Inspired by
+
+https://twitter.com/adamwathan/status/956620857236959232
+
 ## Powered by
 
 * Babel
