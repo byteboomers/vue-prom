@@ -1,7 +1,7 @@
 {
   "name": "vue-prom",
   "description": "Vue promise wrapper component",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "dist/vue-promise.js",
   "scripts": {
     "build": "webpack --mode production --progress"
@@ -10,7 +10,10 @@
     "type": "git",
     "url": "https://github.com/Botre/vue-prom.git"
   },
-  "keywords": ["vue", "promise"],
+  "keywords": [
+    "vue",
+    "promise"
+  ],
   "author": "Bjorn Krols",
   "license": "MIT",
   "devDependencies": {
