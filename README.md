@@ -40,7 +40,7 @@ export default {
 * __argument__: the scalar or object to pass to the promise as its argument.
 * __refresh__: refresh trigger.
 
-The component watches both the argument and refresh props, the promise will re-execute when the value of either of these changes.
+The component [watches](https://vuejs.org/v2/guide/computed.html#Watchers) both the argument and refresh props, the promise will automatically re-execute when the value of either of these changes.
 
 ## Slots
 
