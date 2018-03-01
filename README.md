@@ -45,7 +45,7 @@ import VueProm from 'vue-prom';
 import api from './api';
 export default {
   data() {
-    api;
+    api
   },
   components: {
       VueProm
