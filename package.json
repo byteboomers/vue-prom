@@ -6,10 +6,11 @@
   "scripts": {
     "build": "webpack --mode production --progress"
   },
-  "keywords": [
-    "vue",
-    "promise"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Botre/vue-prom.git"
+  },
+  "keywords": ["vue", "promise"],
   "author": "Bjorn Krols",
   "license": "MIT",
   "devDependencies": {
