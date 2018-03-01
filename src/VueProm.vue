@@ -22,9 +22,9 @@
 
 <script>
 export default {
-  props: ['promise', 'argument', 'refresh'],
+  props: ['promise', 'refresh'],
   created() {
-    this.callPromise();
+    this.executePromise();
   },
   data() {
     return {
@@ -35,12 +35,12 @@ export default {
     };
   },
   methods: {
-    callPromise() {
+    executePromise() {
       this.pending = true;
       this.rejected = false;
       this.error = null;
       this.result = null;
-      this.promise(this.argument)
+      this.promise
         .then(result => {
           this.result = result;
         })
@@ -54,11 +54,11 @@ export default {
     }
   },
   watch: {
-    argument() {
-      this.callPromise();
+    promise() {
+      this.executePromise();
     },
     refresh() {
-      this.callPromise();
+      this.executePromise();
     }
   }
 };
