@@ -11,11 +11,11 @@
             <slot v-else-if="$slots['rejected']" name="rejected"></slot>
             <span v-else>Rejected</span>
         </div>
-        <!-- Fulfilled -->
+        <!-- Then -->
         <div v-else>
-            <slot v-if="$scopedSlots['fulfilled']" name="fulfilled" :result="result"></slot>
-            <slot v-else-if="$slots['fulfilled']" name="fulfilled"></slot>
-            <span v-else>Fulfilled</span>
+            <slot v-if="$scopedSlots['then']" name="then" :result="result"></slot>
+            <slot v-else-if="$slots['then']" name="then"></slot>
+            <span v-else>then</span>
         </div>
     </span>
 </template>
