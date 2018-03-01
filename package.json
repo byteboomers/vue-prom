@@ -6,8 +6,11 @@
   "scripts": {
     "build": "webpack --mode production --progress"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "vue",
+    "promise"
+  ],
+  "author": "Bjorn Krols",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",
