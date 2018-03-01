@@ -14,17 +14,17 @@ You should avoid this component when:
 ## Installation
 
 ```
-npm install --save vue-promise
+npm install --save vue-prom
 ```
 
 ## Example
 
-With vue-promise we would write the following:
+With vue-prom we would write the following:
 
 ```
 <template>
   <div>
-      <vue-promise :promise="api.getUser">
+      <vue-prom :promise="api.getUser">
           <div slot="pending">
               Loading user...
           </div>
@@ -34,19 +34,19 @@ With vue-promise we would write the following:
           <div slot="rejected" slot-scope="{error}">
               {{ error.message }}
           </div>
-      </vue-promise>
+      </vue-prom>
   </div>
 </template>
 
 <script>
-import VuePromise from 'vue-promise';
+import VueProm from 'vue-prom';
 import api from './api';
 export default {
   data() {
     api: api;
   },
   components: {
-      VuePromise
+      VueProm
   }
 };
 </script>
@@ -96,11 +96,11 @@ Alternatively, to keep the template consise, we can ommit the 'pending' and 'rej
 ```
 <template>
   <div>
-      <vue-promise :promise="api.getUser">
+      <vue-prom :promise="api.getUser">
           <div slot="then" slot-scope="{result}">
               Hello {{ result.firstName }} {{ result.lastName }}
           </div>
-      </vue-promise>
+      </vue-prom>
   </div>
 </template>
 ```
