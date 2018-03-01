@@ -45,6 +45,11 @@ All slots are optional.
 | rejected | The promise was rejected  | Regular and scoped | A span with 'Rejected'  |
 | then     | The promise was fulfilled | Regular and scoped | A span with 'Fulfilled' |
 
+Data exposed by scoped slots:
+
+* Scoped 'rejected' slot exposes the 'error' object.
+* Scoped 'then' slot exposes the 'result' object.
+
 ## Powered by
 
 * Babel
