@@ -91,6 +91,20 @@ export default {
 </script>
 ```
 
+Alternatively, to keep the template consise, we can ommit the 'pending' and 'rejected' slots altogether and rely on the default labels provided by the component instead.
+
+```
+<template>
+  <div>
+      <vue-promise :promise="api.getUser">
+          <div slot="then" slot-scope="{result}">
+              Hello {{ result.firstName }} {{ result.lastName }}
+          </div>
+      </vue-promise>
+  </div>
+</template>
+```
+
 ## Props
 
 * __promise__: _required_, the promise to execute.
