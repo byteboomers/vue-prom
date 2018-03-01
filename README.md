@@ -9,7 +9,7 @@ The goal of this component is to simplify rendering logic based on promise state
 You should avoid this component when:
 
 * You need to store the result of the promise (i.e to send it back later or if it is required for a computed property).
-* You need to make a function call inside of the promise callback (i.e store it in Vuex or trigger your notification library).
+* You need to make a function call inside of the promise callback (i.e store the result in Vuex or trigger your notification library).
 
 ## Installation
 
