@@ -2,11 +2,11 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-    entry: path.resolve(__dirname + '/src/VuePromise.vue'),
+    entry: path.resolve(__dirname + '/src/VueProm.vue'),
     output: {
         path: path.resolve(__dirname + '/dist/'),
-        filename: 'vue-promise.js',
-        library: 'vue-promise',
+        filename: 'vue-prom.js',
+        library: 'vue-prom',
         libraryTarget: 'umd',
         umdNamedDefine: true
     },
