@@ -5,10 +5,10 @@
             <slot v-if="$slots['pending']" name="pending"></slot>
             <span v-else>Loading...</span>
         </div>
-        <!-- Rejected -->
+        <!-- Catch -->
         <div v-else-if="rejected">
-            <slot v-if="$scopedSlots['rejected']" name="rejected" :error="error"></slot>
-            <slot v-else-if="$slots['rejected']" name="rejected"></slot>
+            <slot v-if="$scopedSlots['catch']" name="catch" :error="error"></slot>
+            <slot v-else-if="$slots['catch']" name="catch"></slot>
             <span v-else>Error</span>
         </div>
         <!-- Then -->

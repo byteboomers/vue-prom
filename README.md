@@ -31,7 +31,7 @@ With vue-prom we would write the following:
           <div slot="then" slot-scope="{result}">
               Hello {{ result.firstName }} {{ result.lastName }}
           </div>
-          <div slot="rejected" slot-scope="{error}">
+          <div slot="catch" slot-scope="{error}">
               {{ error.message }}
           </div>
       </vue-prom>
@@ -91,7 +91,7 @@ export default {
 </script>
 ```
 
-Alternatively, to keep the template consise, we can ommit the 'pending' and 'rejected' slots altogether and rely on the default labels provided by the component instead.
+Alternatively, to keep the template consise, we can ommit the 'pending' and 'catch' slots altogether and rely on the default labels provided by the component instead.
 
 ```
 <template>
@@ -120,12 +120,12 @@ All slots are optional.
 | Name     | Visible when              | Slot type(s)       | If absent                 |
 |----------|---------------------------|--------------------|---------------------------|
 | pending  | The promise is pending    | Regular only       | A span with 'Loading...'  |
-| rejected | The promise was rejected  | Regular and scoped | A span with 'Error'       |
+| catch | The promise was rejected  | Regular and scoped | A span with 'Error'       |
 | then     | The promise was fulfilled | Regular and scoped | A span with 'Loaded'      |
 
 Data exposed by scoped slots:
 
-* Scoped 'rejected' slot exposes the 'error' object.
+* Scoped 'catch' slot exposes the 'error' object.
 * Scoped 'then' slot exposes the 'result' object.
 
 ## Inspired by
