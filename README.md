@@ -17,6 +17,8 @@ You should avoid this component when:
 npm install --save vue-prom
 ```
 
+[npm package link](https://www.npmjs.com/package/vue-prom)
+
 ## Example
 
 With vue-prom we would write the following:
