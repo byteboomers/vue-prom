@@ -107,7 +107,7 @@ Alternatively, to keep the template consise, we can ommit the 'pending' and 'cat
 
 ## Props
 
-* __promise__: _required_, the promise to execute.
+* __promise__: _required_, a function returning the promise to execute.
 * __argument__: the scalar or object to pass to the promise as its argument.
 * __refresh__: refresh trigger.
 
