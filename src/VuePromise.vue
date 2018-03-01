@@ -21,15 +21,10 @@
 </template>
 
 <script>
-const REASONS = {
-  INITIAL: 'initial',
-  REFRESH: 'refresh',
-  ARGUMENT: 'argument'
-};
 export default {
   props: ['promise', 'argument', 'refresh'],
   created() {
-    this.callPromise(REASONS.INITIAL);
+    this.callPromise();
   },
   data() {
     return {
@@ -40,7 +35,7 @@ export default {
     };
   },
   methods: {
-    callPromise(reason) {
+    callPromise() {
       this.pending = true;
       this.rejected = false;
       this.error = null;
@@ -48,12 +43,6 @@ export default {
       this.promise(this.argument)
         .then(result => {
           this.result = result;
-          this.$emit('load', {
-            result,
-            ...{
-              reason
-            }
-          });
         })
         .catch(error => {
           this.rejected = true;
@@ -66,14 +55,10 @@ export default {
   },
   watch: {
     argument() {
-      this.callPromise({
-        reason: REASONS.ARGUMENT
-      });
+      this.callPromise();
     },
     refresh() {
-      this.callPromise({
-        reason: REASONS.REFRESH
-      });
+      this.callPromise();
     }
   }
 };
