@@ -15,7 +15,7 @@
         <div v-else>
             <slot v-if="$scopedSlots['then']" name="then" :result="result"></slot>
             <slot v-else-if="$slots['then']" name="then"></slot>
-            <span v-else>then</span>
+            <span v-else>Fulfilled</span>
         </div>
     </span>
 </template>
