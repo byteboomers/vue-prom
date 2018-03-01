@@ -1,5 +1,5 @@
 {
-  "name": "vue-promise",
+  "name": "vue-prom",
   "version": "0.0.0",
   "description": "Vue promise wrapper component",
   "main": "dist/vue-promise.js",

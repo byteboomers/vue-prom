@@ -1,4 +1,4 @@
-# vue-promise
+# vue-prom
 
 > Vue promise wrapper component
 
