@@ -2,7 +2,24 @@
 
 > Vue promise wrapper component
 
+## About
+
+The goal of this component is to simplify rendering logic based on promise state (pending / fulfilled, rejected). The component keeps track of the promise's state and proposes slots to render content accordingly.
+
+You should avoid this component when:
+
+* You need to store the result of the promise (i.e to send it back later or if it is required for a computed property).
+* You need to make a function call inside of the promise callback (i.e store it in Vuex or trigger your notification library).
+
+## Installation
+
+```
+npm install --save vue-promise
+```
+
 ## Example
+
+With vue-promise we would write the following:
 
 ```
 <template>
@@ -34,6 +51,46 @@ export default {
 };
 </script>
 ```
+
+Instead of:
+
+```
+<template>
+    <div>
+        <div v-if="loading">
+            Loading user...
+        </div>
+        <div v-else-if="error">
+            {{ error.message }}
+        </div>
+        <div v-else>
+            Hello {{ result.firstName }} {{ result.lastName }}
+        </div>
+    </div>
+</template>
+
+<script>
+import api from './api';
+export default {
+  created() {
+    this.loading = true;
+    this.error = null;
+    api
+      .getUser()
+      .then(result => (this.user = result))
+      .catch(error => (this.error = error))
+      .finally(_ => (this.loading = false));
+  },
+  data() {
+    return {
+      loading: false,
+      user: null
+    };
+  }
+};
+</script>
+```
+
 ## Props
 
 * __promise__: _required_, the promise to execute.
