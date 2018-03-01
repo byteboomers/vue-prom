@@ -108,7 +108,7 @@ Alternatively, to keep the template consise, we can ommit the 'pending' and 'cat
 ## Props
 
 * __promise__: _required_, the promise-returning function.
-* __argument__: the scalar or object to pass to the promise as its argument.
+* __argument__: the scalar or object to pass as an argument to the promise-returning function.
 * __refresh__: refresh trigger.
 
 The component [watches](https://vuejs.org/v2/guide/computed.html#Watchers) both the argument and refresh props, the promise will automatically re-execute when the value of either of these changes.
