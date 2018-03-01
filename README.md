@@ -36,9 +36,11 @@ export default {
 ```
 ## Props
 
-* promise: the promise to execute.
-* argument (optional): the scalar or object to pass to the promise as its argument, when this value changes the promise will be re-executed.
-* refresh (optional): a value watched by the component, when this value changes the promise will be re-executed.
+* __promise__: _required_, the promise to execute.
+* __argument__: the scalar or object to pass to the promise as its argument.
+* ___refresh__: refresh trigger.
+
+The component watches both the argument and refresh props, the promise will re-execute when the value of either of these changes.
 
 ## Slots
 
