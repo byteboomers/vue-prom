@@ -5,3 +5,8 @@
 ## Notes
 
 Work in progress.
+
+## Powered by
+
+* Babel
+* Webpack 4
