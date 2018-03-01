@@ -137,3 +137,7 @@ https://twitter.com/adamwathan/status/956620857236959232
 
 * Babel
 * Webpack 4
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
