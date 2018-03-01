@@ -11,6 +11,9 @@
           <div slot="then" slot-scope="{result}">
               Hello {{ result.firstName }} {{ result.lastName }}
           </div>
+          <div slot="rejected" slot-scope="{error}">
+              {{ error.message }}
+          </div>
       </vue-promise>
   </div>
 </template>
