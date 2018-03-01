@@ -8,6 +8,9 @@
 <template>
   <div>
       <vue-promise :promise="api.getUser">
+          <div slot="pending">
+              Loading user...
+          </div>
           <div slot="then" slot-scope="{result}">
               Hello {{ result.firstName }} {{ result.lastName }}
           </div>
