@@ -38,7 +38,7 @@ export default {
 
 * __promise__: _required_, the promise to execute.
 * __argument__: the scalar or object to pass to the promise as its argument.
-* ___refresh__: refresh trigger.
+* __refresh__: refresh trigger.
 
 The component watches both the argument and refresh props, the promise will re-execute when the value of either of these changes.
 
