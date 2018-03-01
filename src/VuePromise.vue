@@ -3,19 +3,19 @@
       <!-- Pending -->
         <div v-if="pending">
             <slot v-if="$slots['pending']" name="pending"></slot>
-            <span v-else>Pending</span>
+            <span v-else>Loading...</span>
         </div>
         <!-- Rejected -->
         <div v-else-if="rejected">
             <slot v-if="$scopedSlots['rejected']" name="rejected" :error="error"></slot>
             <slot v-else-if="$slots['rejected']" name="rejected"></slot>
-            <span v-else>Rejected</span>
+            <span v-else>Error</span>
         </div>
         <!-- Then -->
         <div v-else>
             <slot v-if="$scopedSlots['then']" name="then" :result="result"></slot>
             <slot v-else-if="$slots['then']" name="then"></slot>
-            <span v-else>Fulfilled</span>
+            <span v-else>Loaded</span>
         </div>
     </span>
 </template>

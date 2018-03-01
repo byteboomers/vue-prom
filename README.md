@@ -46,11 +46,11 @@ The component [watches](https://vuejs.org/v2/guide/computed.html#Watchers) both 
 
 All slots are optional.
 
-| Name     | Visible when              | Slot type(s)       | If absent               |
-|----------|---------------------------|--------------------|-------------------------|
-| pending  | The promise is pending    | Regular only       | A span with 'Pending'   |
-| rejected | The promise was rejected  | Regular and scoped | A span with 'Rejected'  |
-| then     | The promise was fulfilled | Regular and scoped | A span with 'Fulfilled' |
+| Name     | Visible when              | Slot type(s)       | If absent                 |
+|----------|---------------------------|--------------------|---------------------------|
+| pending  | The promise is pending    | Regular only       | A span with 'Loading...'  |
+| rejected | The promise was rejected  | Regular and scoped | A span with 'Error'       |
+| then     | The promise was fulfilled | Regular and scoped | A span with 'Loaded'      |
 
 Data exposed by scoped slots:
 
