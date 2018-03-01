@@ -8,7 +8,7 @@
 <template>
   <div>
       <vue-promise :promise="api.getUser">
-          <div slot="loaded" slot-scope="{result}">
+          <div slot="fulfilled" slot-scope="{result}">
               Hello {{ result.firstName }} {{ result.lastName }}
           </div>
       </vue-promise>

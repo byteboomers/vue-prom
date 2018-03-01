@@ -1,21 +1,21 @@
 <template>
     <span>
-      <!-- Loading -->
-        <div v-if="loading">
-            <slot v-if="$slots['loading']" name="loading"></slot>
-            <span v-else>Loading</span>
+      <!-- Pending -->
+        <div v-if="pending">
+            <slot v-if="$slots['pending']" name="pending"></slot>
+            <span v-else>Pending</span>
         </div>
-        <!-- Error -->
-        <div v-else-if="error">
-            <slot v-if="$scopedSlots['error']" name="error" :error="error"></slot>
-            <slot v-else-if="$slots['error']" name="error"></slot>
-            <span v-else>Error</span>
+        <!-- Rejected -->
+        <div v-else-if="rejected">
+            <slot v-if="$scopedSlots['rejected']" name="rejected" :error="error"></slot>
+            <slot v-else-if="$slots['rejected']" name="rejected"></slot>
+            <span v-else>Rejected</span>
         </div>
-        <!-- Loaded -->
+        <!-- Fulfilled -->
         <div v-else>
-            <slot v-if="$scopedSlots['loaded']" name="loaded" :result="result"></slot>
-            <slot v-else-if="$slots['loaded']" name="loaded"></slot>
-            <span v-else>Loaded</span>
+            <slot v-if="$scopedSlots['fulfilled']" name="fulfilled" :result="result"></slot>
+            <slot v-else-if="$slots['fulfilled']" name="fulfilled"></slot>
+            <span v-else>Fulfilled</span>
         </div>
     </span>
 </template>
@@ -33,14 +33,16 @@ export default {
   },
   data() {
     return {
-      loading: false,
+      pending: false,
+      rejected: false,
       error: null,
       result: null
     };
   },
   methods: {
     callPromise(reason) {
-      this.loading = true;
+      this.pending = true;
+      this.rejected = false;
       this.error = null;
       this.result = null;
       this.promise(this.parameters)
@@ -54,10 +56,11 @@ export default {
           });
         })
         .catch(error => {
+          this.rejected = true;
           this.error = error;
         })
         .finally(_ => {
-          this.loading = false;
+          this.pending = false;
         });
     }
   },
