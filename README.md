@@ -19,7 +19,7 @@ npm install --save vue-prom
 
 ## Example
 
-With vue-prom we would write the following:
+With vue-prom we would write the followingg:
 
 ```
 <template>
