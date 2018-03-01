@@ -34,6 +34,11 @@ export default {
 };
 </script>
 ```
+## Props
+
+* promise: the promise to execute.
+* argument (optional): the scalar or object to pass to the promise as its argument, when this value changes the promise will be re-executed.
+* refresh (optional): a value watched by the component, when this value changes the promise will be re-executed.
 
 ## Slots
 

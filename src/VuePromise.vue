@@ -24,10 +24,10 @@
 const REASONS = {
   INITIAL: 'initial',
   REFRESH: 'refresh',
-  PARAMETERS: 'parameters'
+  ARGUMENT: 'argument'
 };
 export default {
-  props: ['promise', 'parameters', 'refresh'],
+  props: ['promise', 'argument', 'refresh'],
   created() {
     this.callPromise(REASONS.INITIAL);
   },
@@ -45,7 +45,7 @@ export default {
       this.rejected = false;
       this.error = null;
       this.result = null;
-      this.promise(this.parameters)
+      this.promise(this.argument)
         .then(result => {
           this.result = result;
           this.$emit('load', {
@@ -65,9 +65,9 @@ export default {
     }
   },
   watch: {
-    parameters() {
+    argument() {
       this.callPromise({
-        reason: REASONS.PARAMETERS
+        reason: REASONS.ARGUMENT
       });
     },
     refresh() {
