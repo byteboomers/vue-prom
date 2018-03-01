@@ -13,7 +13,7 @@ You should avoid this component when:
 
 ## Installation
 
-```
+```bash
 npm install --save vue-prom
 ```
 
@@ -21,7 +21,7 @@ npm install --save vue-prom
 
 With vue-prom we would write the following:
 
-```
+```vue
 <template>
   <div>
       <vue-prom :promise="api.getUser">
@@ -43,7 +43,7 @@ import VueProm from 'vue-prom';
 import api from './api';
 export default {
   data() {
-    api: api;
+    api;
   },
   components: {
       VueProm
@@ -54,7 +54,7 @@ export default {
 
 Instead of:
 
-```
+```vue
 <template>
     <div>
         <div v-if="loading">
@@ -93,7 +93,7 @@ export default {
 
 Alternatively, to keep the template consise, we can ommit the 'pending' and 'catch' slots altogether and rely on the default labels provided by the component instead.
 
-```
+```vue
 <template>
   <div>
       <vue-prom :promise="api.getUser">
