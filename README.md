@@ -93,7 +93,7 @@ export default {
 </script>
 ```
 
-Alternatively, to keep the template consise, we can ommit the 'pending' and 'catch' slots altogether and rely on the default labels provided by the component instead.
+Alternatively, to keep the template concise, we can omit the 'pending' and 'catch' slots altogether and rely on the default labels provided by the component instead.
 
 ```vue
 <template>
