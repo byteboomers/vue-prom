@@ -1,7 +1,7 @@
 {
   "name": "vue-prom",
   "description": "Vue promise wrapper component",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "main": "dist/vue-prom.js",
   "scripts": {
     "build": "webpack --mode production --progress"
