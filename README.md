@@ -141,3 +141,7 @@ https://twitter.com/adamwathan/status/956620857236959232
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
+
+## Twitter
+
+[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/KrolsBjorn)
