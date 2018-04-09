@@ -144,4 +144,4 @@ https://twitter.com/adamwathan/status/956620857236959232
 
 ## Twitter
 
-[![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/KrolsBjorn)
+[Follow me on Twitter](https://twitter.com/KrolsBjorn)
