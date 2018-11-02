@@ -23,7 +23,7 @@
     "babel-preset-stage-3": "^6.24.1",
     "vue-loader": "^14.2.3",
     "vue-template-compiler": "^2.5.17",
-    "webpack": "^4.20.2",
+    "webpack": "^4.23.1",
     "webpack-cli": "^3.1.1"
   }
 }
