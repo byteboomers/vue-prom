@@ -143,7 +143,7 @@ https://twitter.com/adamwathan/status/956620857236959232
 
 ## Powered by
 
-* Babel
+* Babel 7
 * Webpack 4
 
 ## License
