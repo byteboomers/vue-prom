@@ -7,7 +7,8 @@ module.exports = {
     filename: "vue-prom.js",
     library: "vue-prom",
     libraryTarget: "umd",
-    umdNamedDefine: true
+    umdNamedDefine: true,
+    globalObject: "typeof self !== 'undefined' ? self : this"
   },
   module: {
     rules: [
