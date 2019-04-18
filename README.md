@@ -13,11 +13,19 @@ You should avoid this component when:
 
 ## Installation
 
+### NPM
+
 ```bash
 npm install --save vue-prom
 ```
 
 [npm package link](https://www.npmjs.com/package/vue-prom)
+
+### CDN
+
+```html
+<script src="https://unpkg.com/vue-prom@latest"></script>
+```
 
 ## Example
 
