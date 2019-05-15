@@ -1,6 +1,6 @@
 {
   "name": "vue-prom",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Vue promise wrapper component",
   "author": "Bjorn Krols (https://byteboomers.com)",
   "license": "MIT",
