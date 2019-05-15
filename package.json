@@ -1,21 +1,25 @@
 {
   "name": "vue-prom",
-  "description": "Vue promise wrapper component",
   "version": "1.0.1",
-  "main": "dist/vue-prom.js",
-  "scripts": {
-    "build": "webpack --mode production --progress"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Botre/vue-prom.git"
-  },
+  "description": "Vue promise wrapper component",
+  "author": "Bjorn Krols (https://byteboomers.com)",
+  "license": "MIT",
   "keywords": [
     "vue",
     "promise"
   ],
-  "author": "Bjorn Krols",
-  "license": "MIT",
+  "homepage": "https://github.com/byteboomers/vue-prom#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byteboomers/vue-prom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/byteboomers/vue-prom/issues"
+  },
+  "main": "dist/vue-prom.js",
+  "scripts": {
+    "build": "webpack --mode production --progress"
+  },
   "dependencies": {
     "@babel/runtime": "^7.4.3"
   },
