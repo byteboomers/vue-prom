@@ -1,6 +1,6 @@
 # vue-prom
 
-> Vue promise wrapper component
+Vue promise wrapper component
 
 ## About
 
@@ -27,7 +27,7 @@ npm install --save vue-prom
 <script src="https://unpkg.com/vue-prom@latest"></script>
 ```
 
-## Example
+## Usage
 
 With vue-prom we would write the following:
 
@@ -136,20 +136,3 @@ Data exposed by scoped slots:
 
 * Scoped 'catch' slot exposes the 'error' object.
 * Scoped 'then' slot exposes the 'result' object.
-
-## Inspired by
-
-https://twitter.com/adamwathan/status/956620857236959232
-
-## Powered by
-
-* Babel 7
-* Webpack 4
-
-## License
-
-[MIT](http://opensource.org/licenses/MIT)
-
-## Twitter
-
-[Follow me on Twitter](https://twitter.com/KrolsBjorn)
