@@ -2,7 +2,7 @@
   "name": "vue-prom",
   "description": "Vue promise wrapper component",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Bjorn Krols (https://byteboomers.com)",
   "license": "MIT",
   "keywords": [
