@@ -23,12 +23,12 @@
   },
   "husky": {},
   "dependencies": {
-    "@babel/runtime": "^7.5.3"
+    "@babel/runtime": "^7.5.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.0",
+    "@babel/core": "^7.5.4",
     "@babel/plugin-transform-runtime": "^7.5.0",
-    "@babel/preset-env": "^7.5.3",
+    "@babel/preset-env": "^7.5.4",
     "babel-loader": "^8.0.6",
     "vue-loader": "^15.7.0",
     "vue-template-compiler": "^2.6.10",
